@@ -18,4 +18,21 @@ function isEven(n) {
   }
 }
 
-console.log(isEven(-2));
+//Bean counting
+
+function countBs(string) {
+  let result = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "B") result++;
+  }
+  return result;
+}
+
+function countChar(string, searchChar) {
+  let result = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === searchChar) result++;
+  }
+  return result;
+}
+console.log(countChar("kakkerlak", "k"));
