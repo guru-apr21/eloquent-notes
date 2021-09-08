@@ -35,4 +35,36 @@ function countChar(string, searchChar) {
   }
   return result;
 }
-console.log(countChar("kakkerlak", "k"));
+
+// Factorial
+
+function factorial(n) {
+  if (n <= 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+/**
+ * factorial(5)
+ *  5 * factorial(4)
+ *    4 * factorial(3)
+ *      3 * factorial(2)
+ *        2 * factorial(1)
+ *          1 * factorial(0)
+ *          return 1
+ *        return 2
+ *      return 6
+ *    return 24
+ *  return 120
+ */
+
+function rangeRec(x, y, range = []) {
+  if (x >= y) {
+    return range;
+  }
+  range.push(x + 1);
+  return rangeRec(x + 1, y, range);
+}
+
+console.log(rangeRec(3, 9));
