@@ -36,3 +36,17 @@ console.log(object2.value); //3
 ```
 
 Here changing the value property of object binding reflects in the value property of object2 binding because both the bindings refer to the same object
+
+
+## The lycanthrope’s log
+
+Using correlation, dependence between two statistical variable can be found. Correlation between variables is between -1 and 1.  
+Zero correlation means no dependency. Negative values shows that two variables are related but opposite, if one is true the other is false.  
+
+We use phi coefficient to calculate correlation between boolean variables.
+
+ϕ =	
+n11n00 − n10n01
+√ n1•n0•n•1n•0
+
+Here the 0 represents false and 1 represents true
