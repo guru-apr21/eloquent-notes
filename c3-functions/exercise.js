@@ -68,3 +68,14 @@ function rangeRec(x, y, range = []) {
 }
 
 console.log(rangeRec(3, 9));
+
+function fibonacci(n,range=[]){
+  if(n <= 0){
+    return range
+  }else{
+    range.push(n)
+    return n-1 + fibonacci(n-1,range)
+  }
+}
+
+console.log(fibonacci(10))
