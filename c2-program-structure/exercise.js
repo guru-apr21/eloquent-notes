@@ -38,3 +38,17 @@ for (let i = 1; i <= size; i++) {
 for (let i = 1; i <= size; i++) {
   i % 2 === 0 ? console.log(evenRow) : console.log(oddRow);
 }
+
+let array = [
+  { a: 2, b: 3 },
+  { a: 5, b: 8 },
+];
+
+let newArray = [];
+for (let key of array) {
+  let another = Object.assign(key);
+  delete another.a;
+  newArray.push(another);
+}
+
+console.log(newArray);
